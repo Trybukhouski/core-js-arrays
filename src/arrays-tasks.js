@@ -21,7 +21,7 @@
  *    getIntervalArray(3, 3) => [ 3 ]
  */
 function getIntervalArray(start, end) {
-  const arr = Array.from({ length: end - start + 1 }, function (value, index) {
+  const arr = Array.from({ length: end - start + 1 }, (value, index) => {
     return index + start;
   });
   return arr;
@@ -140,8 +140,6 @@ function getAverage(arr) {
   }
   return 0;
 }
-
-console.log(getAverage([-1, 1, -1, 1]));
 
 /**
  * Checks if all strings in an array have the same length.
